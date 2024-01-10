@@ -1,4 +1,5 @@
-import math, random
+import math
+import random
 
 
 def test_greeting():
@@ -43,7 +44,7 @@ def test_circle():
     """
     r = 23
     # TODO сосчитайте площадь
-    area = math.pi * r * r
+    area = math.pi * r**2
     print(area)
 
     assert area == 1661.9025137490005
@@ -60,7 +61,7 @@ def test_random_list():
     Создайте список из 10 случайных чисел от 1 до 100 (включая обе границы) и отсортируйте его по возрастанию.
     """
     # TODO создайте список
-    l = sorted(random.sample(range(100), 10))
+    l = sorted(random.sample(range(1, 100), 10))
     print(l)
 
     assert len(l) == 10
